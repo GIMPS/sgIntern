@@ -1,2 +1,2 @@
 ## sgIntern
-*A web app to help SG undergrads seeking for intern opportunitie*s
+*A web app aiming to help SG university students to meet better intern opportunities*
