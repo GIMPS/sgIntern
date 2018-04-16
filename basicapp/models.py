@@ -22,4 +22,4 @@ class Post(models.Model):
     category = models.ForeignKey(Category)
     tags = models.ManyToManyField(Tag, blank=True)
 
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User,default='1')
