@@ -1,4 +1,4 @@
 #! /bin/bash
 pwd
-source ./env/sgintern_env/bin/activate 
+source ./env/bin/activate 
 echo "Enter targeted folder."

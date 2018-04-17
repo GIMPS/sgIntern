@@ -1,7 +1,6 @@
 from django.db import models
-# from django.contrib.auth.models import User
 from users.models import User
-
+from django.urls import reverse
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -23,3 +22,8 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
 
     author = models.ForeignKey(User,default='1')
+
+    def __str__(self):
+        return self.title
+    def get_absolute_url(self):
+        return reverse('basicapp:detail', kwargs={'pk': self.pk})
