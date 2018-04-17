@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'', include('basicapp.urls')),
     url(r'^users/', include('users.urls')),
     url(r'^users/', include('django.contrib.auth.urls')),
+    url(r'', include('comments.urls')),
 ]
