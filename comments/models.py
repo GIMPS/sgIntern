@@ -11,5 +11,7 @@ class Comment(models.Model):
 
     post = models.ForeignKey('basicapp.Post')
 
+    rate = models.IntegerField()
+    
     def __str__(self):
         return self.text[:20]
